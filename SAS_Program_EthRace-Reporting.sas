@@ -3,24 +3,24 @@
 /*    Program Name     :	Ethnicity and Race Data Reporting
 /*    Program Path     :	/home/zanewubbena0/Test/EthnicityRaceDataReporting.sas
 /*
-/*	  Site Name        :	TX EDUCATION AGENCY - ADMIN
-/*    Site Number      :	70154697
+/*    Site Name        :	TX EDUCATION AGENCY - ADMIN
+/*    Site Number      :	
 /*    Software/Version :	SAS 9.04.01M6P111518
 /*
-/*    Program Date     :	2021-06-13   Last Updated: 2021-06-23
+/*    Program Date     :	2021-06-13   Last Updated: 2021-08-03
 /*
 /*    Authors(s)       :	Zane Wubbena, PhD
 /*    Quality Assurer  :	[Insert Name Here]
 /*
 /*    Program Purpose  :	The purpose of the SAS program is to input ethnicity and
-/*						  	race data based on 6 data elements and then produce two
-/*							main outputs. The first output is 65 combinations of race/
-/*							ethnicity with 63 being valid categories. The two additional
-/*							categories are for "Missing" and "Not Avaliable" data. The
-/*							second output is the aggregate 7 race/ethnicity categories.
+/*				race data based on 6 data elements and then produce two
+/*				main outputs. The first output is 65 combinations of race/
+/*				ethnicity with 62 being valid categories. The two additional
+/*				categories are for "Missing" and "Not Avaliable" data. The
+/*				second output is the aggregate 7 race/ethnicity categories.
 /*
 /*    Notes  :  The program uses a test data set created to ensure each of the 63
-				valid ethncity and race combinations have a value.
+		valid ethncity and race combinations have a value.
 /**************************************************************************************/
 /**************************************************************************************/
 
@@ -29,7 +29,7 @@
 PROC SETINIT; RUN; /*Displays what products are licensed*/
 
 /**************************************************************************************
-						IMPORT TEST DATASET FOR SAS PROGRAM
+			IMPORT TEST DATASET FOR SAS PROGRAM
 **************************************************************************************/
 OPTIONS VALIDVARNAME=V7;
 LIBNAME ER XLSX "/home/zanewubbena0/ETH_RACE/TestData_Eth_Race.xlsx";
@@ -38,7 +38,7 @@ PROC CONTENTS DATA=ER.DATA_ETH_RACE; RUN;
 PROC PRINT DATA=ER.DATA_ETH_RACE; RUN;
 
 /**************************************************************************************
-						CREATE TEST DATASET FOR SAS PROGRAM
+			CREATE TEST DATASET FOR SAS PROGRAM
 **************************************************************************************/
 DATA ETH_RACE;
 	INPUT STUDENT_ID $ SPED H I A P B W; *Read instream data using column input;
@@ -123,7 +123,7 @@ PROC CONTENTS DATA=ETH_RACE; RUN;
 PROC PRINT DATA=ETH_RACE (obs=20); RUN;
 
 /**************************************************************************************
-			DO NOT RUN THIS CODE - CODE USED TO GENERATE DATA STEP LOGIC
+		DO NOT RUN THIS CODE - CODE USED TO GENERATE DATA STEP LOGIC
 **************************************************************************************/
 /* Generate all possible ethnicity/race combinations without replacement */
 /* 1 of 6 race/ethnicity combinations */
@@ -198,11 +198,11 @@ S = Items[ ,idx];
 S = shape(S, 0, k);           /* reshape S to have 3 cols */
 print S[r=(char(1:nrow(S))) L="Combinations 6/6"];
 /**************************************************************************************
-				END OF CODE USED TO GENERATE DATA STEP LOGIC
+			END OF CODE USED TO GENERATE DATA STEP LOGIC
 **************************************************************************************/
 
 /**************************************************************************************
-			DATA STEP FOR PROCESSING AGGREGATE RACE/ETHNIC STUDENT DATA
+		DATA STEP FOR PROCESSING AGGREGATE RACE/ETHNIC STUDENT DATA
 **************************************************************************************/
 DATA ETH_RACE_ALL;
 	SET ER.DATA_ETH_RACE;
