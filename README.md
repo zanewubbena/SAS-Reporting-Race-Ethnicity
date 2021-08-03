@@ -1,2 +1,2 @@
-# ethnicity-race_reporting
+# ethnicity-race-reporting
 Ethnicity and Race Reporting 
