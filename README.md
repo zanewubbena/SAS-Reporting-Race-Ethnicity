@@ -8,7 +8,7 @@ Revised standards for classifying individuals by race and ethnicity were issued 
 
 USED's guidance requires using a two-part question for the self-identification of a student’s race and ethnicity. One ethnicity (Hispanic/Not Hispanic) and one or more races must be selected. The TEA then collects and stores race and ethnicity data from the two-part question using six data elements—each with a binary value (0=No; 1=Yes). Data from the six data elements are then aggregated and reported using seven categories of race and ethnicity.
 ![Image of Data Collection and Data Reporting](https://github.com/zanewubbena/sas-ethnicity-race-reporting/blob/main/Collection-Reporting-Flow.png)
-### How do we get 7 reporting categories from 6 race and ethnicity data elements?
+How do we get 7 reporting categories from 6 race and ethnicity data elements?
 Race and ethnicity data are collected from local education agencies (LEAs) using six data elements that are stored in the Texas Student Data System/Public Education Information Management System (TSDS/PEIMS). Race and ethnicity data are then processed by the TEA into the seven aggregate reporting categories using three rules:
 
 * Rule 1: If “Hispanic/Latino” is selected, then student is reported as “H” regardless of the race(s) selected.
