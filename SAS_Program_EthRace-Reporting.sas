@@ -1,16 +1,16 @@
 /**************************************************************************************/
 /**************************************************************************************/
 /*    Program Name     :	Ethnicity and Race Data Reporting
-/*    Program Path     :	/home/zanewubbena0/Test/EthnicityRaceDataReporting.sas
+/*    Program Path     :	
 /*
-/*    Site Name        :	TX EDUCATION AGENCY - ADMIN
+/*    Site Name        :	
 /*    Site Number      :	
 /*    Software/Version :	SAS 9.04.01M6P111518
 /*
 /*    Program Date     :	2021-06-13   Last Updated: 2021-08-03
 /*
 /*    Authors(s)       :	Zane Wubbena, PhD
-/*    Quality Assurer  :	[Insert Name Here]
+/*    Quality Assurer  :	
 /*
 /*    Program Purpose  :	The purpose of the SAS program is to input ethnicity and
 /*				race data based on 6 data elements and then produce two
@@ -869,7 +869,7 @@ PROC FREQ DATA=ETH_RACE_ALL ORDER=FREQ nlevels;
 RUN;
 
 /**************************************************************************************
-					END OF SAS PROGRAM - HAVE A NICE DAY!!
+			END OF SAS PROGRAM - HAVE A NICE DAY!!
 **************************************************************************************/
 
 LIBNAME ER CLEAR;
