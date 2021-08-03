@@ -16,8 +16,8 @@ Race and ethnicity data are collected from local education agencies (LEAs) using
 * Rule 3: If “Not Hispanic/Latino” is selected and TWO OR MORE races are selected, then student is reported in the category “Two or More Races” (T).
 
 ## Resources:
-Texas Education Data Standards (TEDS) Web-Enabled Data Standards
-IDEA Equity Requirements: Significant Disproportionality (SD)
-Managing an Identity Crisis: Forum Guide to Implementing New Federal Race and Ethnicity Categories
-Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity
-Maintaining, Collecting and Reporting Racial and Ethnic Data to the U.S. Department of Education
+* Texas Education Data Standards (TEDS) Web-Enabled Data Standards
+* IDEA Equity Requirements: Significant Disproportionality (SD)
+* Managing an Identity Crisis: Forum Guide to Implementing New Federal Race and Ethnicity Categories
+* Revisions to the Standards for the Classification of Federal Data on Race and Ethnicity
+* Maintaining, Collecting and Reporting Racial and Ethnic Data to the U.S. Department of Education
