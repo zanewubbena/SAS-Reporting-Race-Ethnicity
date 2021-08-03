@@ -1,6 +1,6 @@
-# Race and Ethnicity in Special Education#
+# Race and Ethnicity in Special Education
 
-## Data Collection and Data Reporting##
+## Data Collection and Data Reporting
 
 This document describes the difference between how race and ethnicity data are collected and how race and ethnicity data are reported (with a focus on special education) at the Texas Education Agency (TEA). 
 
