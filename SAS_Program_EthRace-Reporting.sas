@@ -123,7 +123,7 @@ PROC CONTENTS DATA=ETH_RACE; RUN;
 PROC PRINT DATA=ETH_RACE (obs=20); RUN;
 
 /**************************************************************************************
-		DO NOT RUN THIS CODE - CODE USED TO GENERATE DATA STEP LOGIC
+	DO NOT RUN THIS CODE - CODE USED TO GENERATE LOGIC USED IN DATA STEP
 **************************************************************************************/
 /* Generate all possible ethnicity/race combinations without replacement */
 /* 1 of 6 race/ethnicity combinations */
